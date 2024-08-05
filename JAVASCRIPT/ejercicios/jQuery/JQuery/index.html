@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Uso de libreria JQuery</title>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+</head>
+<body>
+ <p id="parrafo">Text</p>
+ <script>
+//   var element= document.getElementById("parrafo");
+//   element.innerHTML= "Hola, añadido el texto via javascript";
+$("#parrafo").text("Hola, este texto se ha añadido utilizando JQuery");
+$("#parrafo").after("Esto va despues de")
+$("#parrafo").before ("esto va antes de")
+//   Metodo para evitar conflictos con otras librerias (por ejemplo el signo$ por jQuery)
+//   jQuery.noConflict();
+jQuery("#parrafo").text ("este es un texto que se agrega substituyendo el dolar($) con jQuery previo noConflict")
+//   permite nombrar un alias para susbstituir el dollar
+var xxx=jQuery.noConflict();
+xxx("#parrafo").after("Esto va despues de");
+//   </script>
+//   <!-- jQuery Object -->
+//    <!-- <div id="micaja">
+//     <div>Hola crayola</div>
+//    </div> -->
+   
+   
+   <!-- <script>
+    var selectorCaja=xxx("#micaja");
+    console.log(selectorCaja);
+    var micaja=selectorCaja[0];
+    console.log(selectorCaja[0]); //es lo mismo que la linea de abajo
+    console.log(micaja);
+   </script> -->
+
+   <!-- <a href="index.html">index</a>
+   <div id="caja">La caja con id=caja</div>
+   <a href="index.html">index2</a>
+   <script>
+    //$("*").hide();//Selector(*) que aplica a todos los elementos hide(oculta)
+    $("a").after("<--texto agregado despues de la seleccion");//aplica a todos los elementos con la etiqueta especificada
+    $("a").hide(10000);
+   </script> -->
+</body>
+</html>

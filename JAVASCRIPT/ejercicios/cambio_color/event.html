@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Página de eventos</title>
+ <script>
+ // cambia el color comparando directamente del elemento
+ function clicar() {
+  alert("Hemos hecho un click");
+  if (document.getElementById("cos").style.backgroundColor == "rgb(238, 238, 204)"){
+    console.log("hola");
+    document.getElementById("cos").style.backgroundColor="#FFFFFF";
+   }
+   else {
+    console.log("adios");
+    document.getElementById("cos").style.backgroundColor="rgb(238, 238, 204)";
+   }
+  }
+  //cambia el color comparando el valor de la variable de session
+  function clicar2() {
+   alert("El color del fondo es: "+ sessionStorage.getItem("colorFondo"));
+   if (sessionStorage.getItem("colorFondo") == "rgb(238, 238, 204)"){
+    console.log("hola");
+    sessionStorage.setItem("colorFondo", "#FFFFFF");
+   }
+   else {
+    console.log("adios");
+    sessionStorage.setItem("colorFondo", "rgb(238, 238, 204)");
+   }
+   document.getElementById("cos").style.backgroundColor=sessionStorage.getItem("colorFondo");
+  }
+ </script>
+</head>
+  
+<body id="cos">
+ <script>
+  window.sessionStorage.setItem("colorFondo","rgb(238, 238, 204)");
+  document.getElementById("cos").style.backgroundColor=sessionStorage.getItem("colorFondo");
+ </script>
+ <h1>Ejercicios de eventos</h1>
+ <hr>
+ <button id="boton" onclick="clicar2();">Accion</button>
+</body>
+
+</html>

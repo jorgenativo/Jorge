@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./CSS/styles.css">
+ <script src="./JS/javascript.js"></script>
+ <title>Validación de Formularios</title>
+</head>
+
+<body>
+ <h1>Validación de controles de formularios</h1>
+ <hr>
+ <main>
+  <h3>Formulario</h3>
+  <div id="contenedor">
+   <h5>Restricciones: 5 caracteres de tipo numérico</h5>
+   <label for="name">Nombre:</label>
+   <input type="text" id="nombre" name="nombre" />
+   </form>
+   <hr>
+   <h5>Restricciones:</h5>
+   <form action="#" target="_blank" method="get">
+    <label for="last_name">Apellidos:</label>
+    <input type="text" id="apellido" name="apellido" />
+    <hr>
+   </form>
+   <h5>Restricciones:</h5>
+   <form action="#" target="_blank" method="get">
+    <label for="id">DNI/NIE:</label>
+    <input type="email" id="identidad" name="identidad" />
+   </form>
+<hr>
+   <h5>Restricciones:</h5>
+   <form action="#" target="_blank" method="get">
+    <label for="mail">Correo electrónico:</label>
+    <input type="email" id="e-mail" name="e-mail" />
+   </form>
+<hr>
+<h5>Restricciones:</h5>
+<form action="#" target="_blank" method="get">
+ <label for="url">URL:</label>
+ <input type="url" id="url" name="url" />
+</form>
+<hr>
+<input type="button" value="enviar">
+
+<h5>Restricciones:</h5>
+       <form action="#" method="get">
+           <label for="CP">Restriccions: 5 caracters de tipus numèric.</label><hr>
+           <input type="text" id="cP" maxlength="5" minlength="5" onblur="valida(this.value,'CP')"><br>
+           <button id="enviar">Enviar</button>
+           <div id="missatge" class="missatge"></div>
+       </form>
+   
+ </main>
+</body>
+
+</html>

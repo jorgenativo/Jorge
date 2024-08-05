@@ -1,0 +1,42 @@
+*{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 25px;
+}
+#calculadora{
+ background-color: darkgray;
+ width:350px;
+ height: 500px;
+ color: antiquewhite;
+ margin: auto;
+ text-align: center;
+ padding: 5px;
+ border-radius: 15px;
+}
+#text{
+ background-color: antiquewhite;
+ width: 300px;
+ height: 100px;
+ margin: auto;
+ margin-bottom: 20px;
+ border-radius: 10px;
+}
+.operaciones{
+ background-color: black;
+ color: aliceblue;
+ width: 100px;
+ margin-bottom: 10px;
+ border-radius: 5px;
+ border-color: bisque;
+}
+.numeros{
+ 
+ width: 80px;
+ margin-bottom: 10px;
+ border-radius: 5px;
+ border-color:bisque;
+}
+#jn{
+ background-color: aqua;
+ border-radius: 90%;
+ margin: 20px;
+}

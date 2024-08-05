@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Calculadora</title>
+ <link rel="stylesheet" href="./CSS/style.css">
+ <script src="./JS/javascript.js"></script>
+</head>
+<body>
+ <div id="calculadora">
+  <h4>Calculadora</h4>
+  <div id="pantalla">
+   <input type="text" id="display" value="" class="pantalla">
+  </div>
+  <div>
+   <button class="operaciones"onclick="calcular('+')">+</button>
+   <button class="operaciones"onclick="calcular('-')">-</button>
+   <button class="operaciones"onclick="calcular('*')">*</button>
+   <button class="operaciones"onclick="calcular('/')">/</button>
+   <button class="operaciones"onclick="calcular('%')">%</button>
+   <button class="operaciones"onclick="resultado()">=</button>
+   <button class="operaciones"onclick="borrar('C')">C</button>
+   <button class="operaciones"onclick="borrar('CE')">CE</button>
+   <button class="operaciones"onclick="corregir('<<')"><<</button>
+   <button class="numeros"onclick="calcular(1)">1</button>
+   <button class="numeros"onclick="calcular(2)">2</button>
+   <button class="numeros"onclick="calcular(3)">3</button>
+   <button class="numeros"onclick="calcular(4)">4</button>
+   <button class="numeros"onclick="calcular(5)">5</button>
+   <button class="numeros"onclick="calcular(6)">6</button>
+   <button class="numeros"onclick="calcular(7)">7</button>
+   <button class="numeros"onclick="calcular(8)">8</button>
+   <button class="numeros"onclick="calcular(9)">9</button>
+   <button class="numeros"onclick="calcular(0)">0</button>
+   <button class="numeros"onclick="calcular(',')">,</button>
+   <button class="numeros"onclick="calcular('+/-')">+/-</button>
+  </div>
+  <div id="jn">
+    <h6>JN</h6>
+  </div>
+  </div>
+  <hr>
+</body>
+
+</html>

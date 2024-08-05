@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ús de llibreria jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcvBIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+     <link rel="stylesheet" href="./17-jQueryLive.css">
+</head>
+<body>
+    <p id="paragraf">Text Inicial</p>
+    <script>
+        // var element = document.getElementById("paragraf");
+        // element.innerHTML = "Hola món, afegit de text via javascript";
+        //$("#paragraf").text("Hola món, aquest text substitueix el text inicial utilitzant jQuery");
+        // $("#paragraf").after("Aquest text s'ha afegit utilitzant el mètode After de jQuery.");
+        //$("#paragraf").before("Això és l'inici.");
+        // jQuery.noConflict(); // mètode per evitar conflictes amb altres llibreries
+        // jQuery("#paragraf").text("Aquest és un text que substitueix l'anterior utilitzant el noConflict");
+        // var egl = jQuery.noConflict();// permet posar un àlies per substituir el dollar
+        // egl("#paragraf").after("Afegeixo text utilitzant un àlies");
+    </script>
+    <!--  jQuery Object -->
+      <!-- <div id="laMevaCapa">
+        <div>Hola crayola</div>
+      </div>
+      <script>
+        var selectorCapa = $("#laMevaCapa");
+        console.log(selectorCapa);
+        var laMevaCapa = selectorCapa[0];
+        console.log(selectorCapa[0]); // és el mateix que la línia d'abaix
+        console.log(laMevaCapa);
+      </script> -->
+
+      <!-- Selectors de JQuery -->
+    <!-- 
+    Tipus
+    Classe
+    Id
+    Possessió d'un atribut
+    Valor d'un atribut
+    Index
+    Pseudo-estat 
+    -->
+    <a href="index.html">Index</a>
+    <div id="caixa" class="vermell">La caixa amb id=caixa</div>
+    <a href="index.html">Index 2 </a>
+    <div id="caixa2" class="vermell">segona caixa</div>
+    <div id="caixa3">tercera caixa</div>
+    <div id="caixa4" class="verd">quarta caixa</div>
+
+    <script>
+        //$("*").hide(); // selector que aplica a tots els elements
+        // $("a").after(" <--text afegit després de la selecció"); // aplica a tots els elements amb l'etiqueta especificada
+        //("a").hide(1000);
+        //$("a").remove();
+        // $(".vermell").width("100px");
+        // $(".vermell").height("100px");
+
+        // $("#caixa2").css("background-color","green");
+        //$("[href]").css("background-color","yellow");
+        //$("div").not(".vermell").css("background-color", "blue");
+        //$("#caixa2,#caixa4").css("background-color","green");
+        // $("#caixa4").css("background-color","brown");
+       //$(".vermell").on("click",canviaColor());
+       $(".vermell").click(function(){canviaColor(); mostraAlerta();})
+    //    $(".vermell").on("click",(function(){
+    //        $(".vermell").css("background-color","yellow");
+    //    }))
+
+    function canviaColor(){
+        $(".vermell").css("background-color","yellow");
+    };
+
+    function mostraAlerta(){
+        alert("Molt Bé, Mina!!!");
+    }
+
+    </script>
+</body>
+</html>

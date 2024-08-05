@@ -1,0 +1,15 @@
+.vermell{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.verd{
+    background-color: green;
+    width: 150px;
+    height: 100px;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}

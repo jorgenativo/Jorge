@@ -1,0 +1,15 @@
+main{
+ background-color: brown;
+ width: 600px;
+ height: 600px;
+ text-align: center;
+}
+#contenedor{
+ background-color: rgb(246, 117, 117);
+ width: 500px;
+ height: 500px;
+ margin: auto;
+}
+input{
+ width: 300px;
+}

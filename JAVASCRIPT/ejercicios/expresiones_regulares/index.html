@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Expresiones Regulares</title>
+    <script src="./EjerciciosExpresionesRegulares.js"></script>
+</head>
+
+<body>
+    <h1>Ejercicios de Expresiones Regulares REGEXP</h1>
+    <hr>
+    <!-- <h3>3. Validación de códigos postales</h3> 
+ <h4>Escriu una funció esCpValid(zip) que retorni true si el codi postal és vàlid i false altrament.
+  Pista:
+  Ha de contenir 5 números</h4>
+ <script>
+  console.log(esCpValid("12345")); //true
+  console.log(esCpValid("12345-6789")); //false
+  console.log(esCpValid("123456")); //false
+ </script>
+ <hr>
+ <h3>1. Validación de correos electrónicos</h3>
+ <h4>Escriu una funció esEmailValid(email) que retorni true si l'email és vàlid i false altrament.
+  Pista:
+  Ha de contenir **@**, i després un **.**</h4>
+ <script>
+  console.log(esEmailValid("test@example.com")); // true
+  console.log(esEmailValid("test.example.com")); // false
+ </script>
+ <hr>
+ <h3>2. Extracción de números de teléfonos</h3>
+ <h4>Escriu una funció extreureNombresTelefon(text) que retorni una llista de números de telèfon trobats en el text.
+  > Pista:
+  Ha de contenir **3 números entre parèntesis**, després **4 números**, un **-** i **4 números** més</h4>
+ <script>
+  console.log(extreureNombresTelefon("Call me at (123) 456-7890 or (987) 654-3210")); // ["(123) 456-7890", "(987) 654-3210"]
+ </script>
+ <hr>
+ <h3>4. Extracció de dominis de correu electrònic</h3>
+ <h4>Escriu una funció extraureDominiEmail(email) que retorni el domini de l'email.
+  > Pista:
+  S'ha de treure tot el què hi hagi després de la **@**</h4>
+  <script>
+   console.log(extraureDominiEmail("test@example.com jorge@hotmail.com")); // "example.com"
+  </script>
+  <hr>
+    <h3>5. Validació de números de targeta de crèdit</h3>
+    <h4>Escriu una funció esTargetaCreditValida(number) que retorni true si el número de targeta és vàlid i false
+        altrament.
+        > Pista:
+        Ha de contenir **16 números**, **tots junts**, o **separats per espais en grups de 4**</h4>
+    <script>
+        console.log(esTargetaCreditValida("1234 5678 9012 3456")); // true
+        console.log(esTargetaCreditValida("1234567890123456")); // true
+        console.log(esTargetaCreditValida("1234-5678-9012-3456")); // false
+        console.log(esTargetaCreditValida("123456789012 3456")); // false
+    </script>
+    <hr>-->
+    <h3>6. Extracció de hashtags</h3>
+    <h4>Escriu una funció extraureHashtags(frase) que retorni una llista de hashtags trobats en el text.
+        > Pista:
+        Extraure el **#** i la **paraula adjunta**</h4>
+    <script>
+        console.log(extraureHashtags("Loving the new #JavaScript features in #ECMAScript2021!")); // ["#JavaScript", "#ECMAScript2021"]
+    </script>
+    <hr>
+    <h3>7. Validació de contrasenyes</h3>
+    <h4>Escriu una funció esPasswordValida(password) que retorni true si la contrasenya és vàlida i false altrament.
+        > Pista:
+        Ha de contenir **lletres**, **números**, i **caràcters especials**
+    </h4>
+    <script>
+        console.log(esPasswordValida("Password1!")); // true
+        console.log(esPasswordValida("password1")); // false
+    </script>
+    <hr>
+    <h3>8. Extracció de dates</h3>
+    <h4>Escriu una funció extraureDates(text) que retorni una llista de dates trobades en el text.</h4>
+    <script>
+        console.log(extraureDates("My birthday is on 12/05/1992 and my brother's is on 03/10/1995.")); // ["12/05/1992", "03/10/1995"]
+    </script>
+    <hr>
+    <h3>9. Eliminació de duplicats en una cadena</h3>
+    <h4>Escriu una funció treureParaulesDuplicades(text) que retorni la cadena sense paraules duplicades consecutives.
+        > Pista:
+        Retorn text.replace(patro,'$1');</h4>
+    <script>
+        console.log(treureParaulesDuplicades("This is is a test test.")); // "This is a test."
+    </script>
+    <hr>
+    <h3>10. Validació de URL</h3>
+    <h4>Escriu una funció esURLValida(url) que retorni true si la URL és vàlida i false altrament.
+        > Pista:
+        return regex.test(url);</h4>
+    <script>
+        console.log(esURLValida("https://www.example.com")); // true
+        console.log(esURLValida("ftp://files.example.com")); // true
+        console.log(esURLValida("htp://invalid-url.com")); // false
+    </script>
+    <hr>
+
+</body>
+
+</html>

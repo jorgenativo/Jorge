@@ -1,0 +1,30 @@
+.contenedor{
+ background-color: blue;
+ color: aliceblue;
+ width: 1000px;
+ height: 500px;
+ display: flex;
+ justify-content: space-around;
+ text-align: center;
+
+}
+.tarjeta{
+ background-color: blueviolet;
+ width: 320px;
+ height: 350px;
+ border: 1px solid black;
+ margin: auto;
+ 
+}
+.nombre{
+ background-color: yellow;
+ height: 50px;
+ margin: auto;
+ border: 1px solid black;
+ color: black;
+}
+.poderes{
+background-color: brown;
+height: 235px;
+
+}

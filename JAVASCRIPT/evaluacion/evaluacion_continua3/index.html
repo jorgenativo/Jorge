@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación contínua</title>
+</head>
+
+<body>
+    <h1>Ejercicios de JavaScript (Evaluación Contínua)</h1> 
+    <hr>
+    <h2>1 Operacions bàsiques, Tipus de dades, Prompt i Alert</h2>
+    <p>Crear un programa on l'usuari ingressi en un prompt la temperatura a Celcius i el programa mostri amb un
+        **alert** la temperatura a Fahrenheit.</p>
+    <p>Demanar un número a un usuari a través d'un prompt i després dividir-lo per 10, exemple: 5/10 igual 0.5</p>
+
+    <script>
+        var Celcius = prompt("coloca la temperatura en Celcius");
+        resultado = Celcius * 1.8 + 32
+        alert("La temperatura en Fafrenheit es" + resultado);
+        var numero = prompt("Coloca un numero");
+        resultado = numero / 10
+        document.write(resultado);
+    </script>
+    <hr>
+    <h2>2 If i else</h2>
+    <p>- Crear un programa que determini si un número introduït en un **popup** és divisible per 11 i 5 o no, mostrar el
+        resultat amb **console.log**
+
+        - Crear un programa que demani a l'usuari dos números en un Prompt i després mostri en un **alert** el nombre
+        més gran.</p>
+    <script>
+        var numero = parseInt(prompt("escribe un numero"));
+        if (numero % 11 === 0) {
+            console.log("El número es divisible por 11");
+        }
+        else if
+            (numero % 5 === 0) {
+            console.log("El numero es divisible por 5");
+        }
+        else {
+            console.log("El número no es divisible");
+        }
+
+    </script>
+    <script>
+        var numero1 = parseInt(prompt("Escribe primer número"));
+        var numero2 = parseInt(prompt("Escribe segundo número"));
+        if (numero1 > numero2) {
+            console.log(numero1);
+        }
+        else {
+            console.log(numero2);
+        }
+    </script>
+    <hr>
+    <h2>3 While</h2>
+    <p>Mostrar tots els números de 1 a **N** augmentant de 2 en 2 on **n** ho ingressa l'usuari des d'un prompt.</p>
+    <script>
+        var n = parseInt(prompt("asigna un numero"));
+        contador = 1;
+        while (contador <= n) {
+            console.log(contador);
+            contador = contador + 2;
+
+        }
+    </script>
+    <hr>
+    <h2>4 Patrons con Loop anidados</h2>
+    <p>Dibuixeu els patrons següents utilitzant `document.write`. Per omplir els espais buits cal imprimir un espai
+        buit.
+
+        Quadrat ple:
+
+    <pre><center>
+        *****
+        *****
+        *****
+        *****
+        *****
+        </center></pre>
+
+    Quadrat buit:
+
+    <pre><center>
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+        </center></pre>
+
+    Tauler d'escacs:
+
+    <pre><center>
+        * * * * * * * *
+         * * * * * * * 
+        * * * * * * * *
+         * * * * * * * 
+        * * * * * * * *
+         * * * * * * * 
+        * * * * * * * *
+         * * * * * * * 
+        
+        </center></pre>
+    Quadrat buit:
+
+    <pre><center>
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+        </center></pre>
+
+    Piràmide Esquerra:
+
+    <pre><center>
+        *     
+        **    
+        ***   
+        ****  
+        ***** </center></pre>
+
+    Piràmide centrada
+
+    <pre><center>
+        *
+        ***
+        *****
+        *******
+        *********
+        </center></pre>
+
+    Piràmide invertida
+
+    <pre><center>
+        
+        *********
+        *******
+        *****
+        ***
+        *
+        </center></pre>
+
+
+    Diamant:
+
+    <pre><center>
+        *
+        ***
+        *****
+        *******
+        *********
+        *******
+        *****
+        ***
+        *
+        </center></pre>
+    </p>
+    <script>
+        document.write("Cuadrado Lleno")
+        document.write("<center><pre>*****</pre><pre>*****</pre><pre>*****</pre><pre>*****</pre><pre>*****</pre></center>" + "<hr>")
+
+        document.write("Cuadrado Vacio")
+        document.write("<center><pre>*****</pre><pre>*   *</pre><pre>*   *</pre><pre>*   *</pre><pre>*****</pre></center>" + "<hr>")
+
+        document.write("Tablero de Ajedrez")
+        document.write("<center><pre>* * * * * * * *</pre><pre> * * * * * * * </pre><pre>* * * * * * * *</pre><pre> * * * * * * * </pre><pre>* * * * * * * *</pre><pre> * * * * * * * </pre><pre>* * * * * * * *</pre><pre> * * * * * * * </pre></center>" + "<hr>")
+
+        document.write("Cuadrado Vacio")
+        document.write("<center><pre>*****</pre><pre>*   *</pre><pre>*   *</pre><pre>*   *</pre><pre>*****</pre></center>" + "<hr>")
+
+        document.write("Piramide Izquierda")
+        document.write("<center><pre>*    </pre><pre>**   </pre><pre>***  </pre><pre>**** </pre><pre>*****</pre></center>" + "<hr>")
+
+        document.write("Piramide Centrada")
+        document.write("<center><pre>*</pre><pre>***</pre><pre>*****</pre><pre>*******</pre><pre>*********</pre></center>" + "<hr>")
+
+        document.write("Piramide Invertida")
+        document.write("<center><pre>*********</pre><pre>*******</pre><pre>*****</pre><pre>***</pre><pre>*</pre></center>" + "<hr>")
+
+        document.write("Diamante")
+        document.write("<center><pre>*</pre><pre>***</pre><pre>*****</pre><pre>*******</pre><pre>*********</pre><pre>*******</pre><pre>*****</pre><pre>***</pre><pre>*</pre></center>" + "<hr>")
+    </script>
+    <hr>
+    <h2>5-Array</h2>
+    <p>Donat l'array = [1,2,3,4,5,6]
+        - Iterar per tots els elements dins un array utilitzant `while` i mostrar-los a la pantalla.
+        - Iterar per tots els elements dins un array utilitzant `for` i mostrar-los a la pantalla.
+        - Iterar per tots els elements dins un array utilitzant .`for cada element` i mostrar-los a la pantalla.
+        - Donat un array que conté `["blau", "groc", "vermell", "verd", "cafè", "rosa"]` determinar si un color
+        introduït per l'usuari a través d'un prompt es troba dins de l'array o no.</p>
+    <script>
+        //While
+        const array = [1, 2, 3, 4, 5, 6];
+        var index = 0;
+        while (index < array.length) {
+            document.write(array[index] + '<br>');
+            index++;
+        }
+    </script>
+    <script>
+        //for 
+        const array1 = [1, 2, 3, 4, 5, 6];
+        for (var i = 0; i < array1.length; i++) {
+            document.write(array1[i] + '<br>');
+        }
+    </script>
+    <script>
+        // Determinar el color
+        colors = prompt("Introduce un color");
+        lista = ["azul", "amarillo", "rojo", "verde", "café", "rosa"];
+        i = 0; encontrado = false;
+        while (i <= lista.length && encontrado == false) {
+            if (colors == lista[i]) {
+                encontrado = true;
+            }
+            i++;
+        }
+        document.write(encontrado)  
+    </script>
+    <hr>
+    <h2>6 Unió, intersecció i compteig</h2>
+    <p>- Hi ha dos arrays, cadascun amb 5 paraules, generar un nou array amb la intersecció dels dos elements. (Exemple:
+        [1,2,3] unió [1,2,4] = [1,2])</p>
+
+    <p>- Hi ha dos arrays, cadascun amb 5 paraules, generar un nou array amb la unió d'ambdós elements, (Exemple:
+        [1,2,3] unió [1,2,4] = [1,1,2,2,3,4])</p>
+
+    <script>
+        //Intersección de ambos elementos
+        const color1 = ["amarillo", "azul", "rojo", "verde"];
+        const color2 = ["amarillo", "azul", "blanco", "negro"];
+        const intersección = color1.filter(word => color2.includes(word)); 
+
+        document.write(intersección);
+        
+    </script>
+    <script>
+        //Unión de ambos elementos
+        const colors1 = ["amarillo", "azul", "rojo", "verde"];
+        const colors2 = ["anaranjado", "morado", "blanco", "negro"];
+        const union = colors1.concat(colors2);
+
+        document.write(union);
+    </script>
+
+<!-- ## 7 Arrays d'arrays  
+
+- Crear una funció que permet juntar un array donat.
+
+Exemple:
+
+~~~javascript
+var arr = [[1,2,3],[4,5,6],[7,8,9]];
+console.log(juntar(arr)); // [1,2,3,4,5,6,7,8,9]
+~~~
+
+- Crear una funció que divideixi un array en dues parts amb la mateixa quantitat d'elements (o una diferència de màxim un element) i torni un array que contingui el grup1 i el grup2.
+
+~~~javascript
+var arr = [1,2,3,4,5,6,7,8];
+console.log(split(arr)); // [[1,2,3,4], [5,6,7,8]]
+~~~	
+
+## 8 Matrius
+
+- Recórrer un array d'arrays per mostrar-lo com una matriu. Per exemple [[1,1],[2,2]] es mostraria de la manera següent:
+
+|     1  |     1  |
+|--------|--------|
+| **2**  |  **2** |
+
+
+- Sumar [[1,1],[2,2]] amb [[3,1],[3,2]].
+- Trobar el nombre més gran en una matriu.
+
+## 9 i 10 Funcions i arrays
+- Crear una funció que rebi un array com a paràmetre i torneu una còpia de l'array.
+- Crear una funció que torni la mitjana d'un array, en cas que l'array estigui buit ha de tornar zero.
+- Crear una funció que calculi la mitjana dins d'un array però dins d'un rang, aquesta funció rep l'array, un punt de partida i un de terme i torna la mitjana dels valors dins del rang especificat.-->
+
+</body>
+
+</html>
